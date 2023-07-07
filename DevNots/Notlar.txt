@@ -1,0 +1,49 @@
+1-) (+) User <-> Survey iliþkisi ekle
+2-) (+) Servis dönüþlerine baþarýlý baþarýsýz dönüþü ekle bunuda hata yönetimi ile yap
+3-) (+) veritabaný hatalý düzelt
+4-) (+) veritabanýnda IEntityTypeConfiguration ile özellikleri farklý bir yerde sakla kodlarý düzenle
+5-) (+) miras alýnmasýn dediklerine sealed de 
+
+
+ToDoList Backend
+1-) (-+ Kýsmen) Dtolara Gereklilikleri atribute olarak ekle
+2-) (-+ Kýsmen) api adreslerini hazýrla ve Attribute leri ekle
+3-) middleware ile kontrolleri ekle
+4-) Filtreleme ile kontrollere bak
+5-) hangfire ile anket bitimini kontrol et (belirtilen güne girince bitsin kontrol her gece 12 de olsun)
+6-) istatistikler için api ekle
+7-) kullanýcý ekle aUTHORÝZE EKLE
+8-) authorize sonrasý veritabanýna geri dön ve deðiþikliklere baþla
+9-) Db de anketlere guid ekle ve bu guid ile anketleri getirt bu sayede anketler biraz daha linklere baðlý eriþime sahip olur id yerine guid de konabilir direk
+
+
+Düzeltilecekler
+1-) (+) DbContext connectionString Program.cs yerine içinden alýyor düzelt 
+2-) (+)(IReturnModel<T> ile yapýldý) Hata yönetimi ekle boþ dönme ihtimalinde hata çýkacak ya herþeyi nullable yap yada herþeyin dolu dönmesini kesinleþtir
+3-) (-)(iptal)AnswerValueId nullable olacak answer da 
+4-) (+)(IReturnModel<T> ile yapýldý) Hata yönetimini ayarla dp den gelen cevaplarda bool ekle
+
+
+
+
+
+
+
+apileri tamamla hýzlýca async ve helpleri yüzeysel ekle (Hateoas öyle bir yapýldý ki bakan kaybolur amk)
+filtre (+) istenilen methodlarda gelen istekler loglanýyor 
+middleware (kelime kontrolü)
+authorize (+)
+istatiksel api döünüþü (-+ idareten)
+istatiksel arayüz (frontend in amý.........)
+
+
+
+
+
+
+
+
+
+
+
+
