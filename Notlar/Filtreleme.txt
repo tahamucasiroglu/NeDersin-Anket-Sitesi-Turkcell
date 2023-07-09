@@ -1,0 +1,2 @@
+verilerde filtreleme yapma farkı önceden belirli tanımlamalar yapmayı saplar
+

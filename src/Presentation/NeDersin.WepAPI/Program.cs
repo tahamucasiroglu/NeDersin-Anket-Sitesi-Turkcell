@@ -1,13 +1,18 @@
+using Hangfire;
+using Hangfire.SqlServer;
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authentication.Cookies;
+using Microsoft.Extensions.Configuration;
+using NeDersin.Services.Hangfire;
 using NeDersin.Services.Mappings;
 using NeDersin.Services.Service.Abstract.Base;
+using NeDersin.Services.Service.Concrete;
 using NeDersin.WepAPI.Extensions;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container.
-
+string? connectionString = builder.Configuration.GetConnectionString("NeDersinDbContext");
+GlobalConfiguration.Configuration.UseSqlServerStorage(connectionString, new SqlServerStorageOptions { QueuePollInterval = TimeSpan.FromSeconds(1) });
 builder.Services.AddControllers();
 
 builder.Services.AddAutoMapper(typeof(MapProfile));
@@ -22,6 +27,8 @@ builder.Services.AddAutoMapper(typeof(MapProfile));
 builder.Services.AddCookie();//Extension
 builder.Services.AddPolicy();//Extension
 builder.Services.AddJWT();//Extension
+
+builder.Services.AddCustomHangfireExtension(connectionString ?? "");
 
 
 builder.Services.AddControllers(
@@ -42,7 +49,7 @@ builder.Services.AddSwaggerGen();
 
 //builder.Logging.SetMinLevelToWarning();
 
-string? connectionString = builder.Configuration.GetConnectionString("NeDersinDbContext");
+
 builder.Services.AddScopes(); //Extension
 builder.Services.AddSingletons(); //Extension
 builder.Services.AddContext(connectionString); //Extension
@@ -66,7 +73,9 @@ app.AddMiddlewares(); //extension
 //app.Services.DeleteDbIfExist(); //Extension
 app.Services.CheckDb(); //Extension
 //app.Services.TestDb(); //Extension
-
+app.UseHangfireDashboard();
+BackgroundJob.Enqueue<SurveyIsEndCheckHangfire>(x => x.CheckSurveys());
+BackgroundJob.Schedule<SurveyIsEndCheckHangfire>(x => x.CheckSurveys(),DateTimeOffset.MaxValue);
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {

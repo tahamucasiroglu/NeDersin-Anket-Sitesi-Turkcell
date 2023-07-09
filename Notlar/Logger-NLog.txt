@@ -1,0 +1,19 @@
+----------------------APİ-----------------------------
+8. bölüm
+servis içinde contract olarak açtı
+ILoggerService adında bir interface açtı loginfo logwarning logerror logdebug ekledi
+nlog nuget paketi yükledi
+
+nlog ile log kaydetme yapılmakta 8.4 bunu nette araştır
+xmlk dosyası ile yapılmakta orjinal micrtrosoftta yapılıyorsa onu kullan
+buna ayrıntı ekle ip adresi - kullanıcı bilgileri - tarayıcı - konum vs
+
+
+
+
+
+
+
+
+
+

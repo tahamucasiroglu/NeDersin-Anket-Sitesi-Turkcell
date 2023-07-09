@@ -1,0 +1,1 @@
+kullanıcıya bilgileri girince token atanacak ve bu sayede üyelik yerlerinde token ile işlem yapacak. 

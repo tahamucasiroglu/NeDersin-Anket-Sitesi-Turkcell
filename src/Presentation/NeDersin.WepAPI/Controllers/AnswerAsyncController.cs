@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using NeDersin.DTOs.Concrete.Request.Add;
 using NeDersin.DTOs.Concrete.Request.Delete;
@@ -30,7 +31,7 @@ namespace NeDersin.WepAPI.Controllers
 
         [HttpGet("[action]")]
         [ServiceFilter(typeof(LogFilterAttribute))]
-        [AnketorAuthorize]
+        [Authorize]
         public async Task<IActionResult> GetByQuestionId([FromBody] IdModel QuestionId)
         {
             if (!ModelState.IsValid) return ModelStateNonValid<IdModel>(nameof(GetByQuestionId));

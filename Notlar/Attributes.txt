@@ -1,0 +1,33 @@
+----------------------MVC-----------------------------
+[ValidateAntiForgeryToken] => post ve gette güvenlik önlemi ekler. Attribute kısmında konur (btk mvc 3.4 11dk)
+[FormForm] => controller ile çalışılacaksa veriler için nereden geleceğini belirterek ek güvenlik ve clean kod eklenmiş olur
+[Required] => bu bilgiyi girmek zorunlu demek  [Required(ErrorMessage = )] gibi eklentiler gelebilir api de olur bu muhtemelen test et
+[FormRoute] => kullanımı ile route dan gelen veri diye işaretle güvenlik önlemi ve temiz kod
+Not: attribute leri dtolarda tanımla
+----------------------APİ-----------------------------
+
+[ApiController] => api yapısını ekler
+[Route("home")] => controller a nasıl gidileciğinin yolunu hazırlar
+[FromBody] => bodyden gelecek sınıflarda kullnırız kaynak gönderimi
+
+[HttpPatch] => patch göndermek için
+
+[Serializable] => xml dönüşümü için serileştirilebilir demek
+
+max require gibi attributeleri model.isvalid ile kontrol ediyormuşsun ben bunu yeni öğrendim :D
+
+[ActionFilter] => controller yada içindeki action uygulanan yerlerde düzenleme imkanı sağlar
+
+
+[Authorize] => class veya controller ların sadece izinle girilmesini sağlar
+[AllowAnonymous] => serbest olmasını sağlar
+
+[ResponseCache(Duration = 70, VaryByQueryKeys = new[] {"id"}, Location = ResponseCacheLocation.)] => bu 70 saniye tut ve id değişirse cacheyi yenile demek, location ise nerede saklamak istediğin clien dersen tarayıcı saklar
+bunu action başına ekleyerek kullanırsın ders 35 2.10 da var
+
+
+ [HttpHead] ve [HttpOptions] bunlara sonra bak
+ 
+ 
+  
+

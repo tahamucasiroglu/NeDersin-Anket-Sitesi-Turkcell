@@ -1,0 +1,38 @@
+
+
+12. bölüm doğrulama
+
+422 böyle bir veri yok demek
+
+public abstract record olabiliyormuş 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

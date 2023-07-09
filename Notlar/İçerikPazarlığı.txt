@@ -1,0 +1,30 @@
+
+api 11. bölüm
+
+clienler istek olarak text/csv application/xml  application/json gibi isteklerine sabit cevap vermek içerik pazarlığına kapalı olabilir açıska eğer bunlardan hangisine destek vereceğini kararlaştırman laızm bu dureumdada 406 kodu ile destek vermnediklerine dönmen lazım
+
+addcontrollers içine config ekleyerek 
+config.respectbrowseracceptheader ile içerik pazarlığını aktif edebilirisin içerik pazarlığı açıldı sonra ayarlaman lazım
+config.returnhttpnotacceptable ilede paylaşımıu açarız => destek eklenmezse artık 406 ile kabul edilmedi dönecek
+
+xml çıktısı desteği için addcontrollers a sonradan .addxmldatacontractserializerformatters diyerek işi bitirebilirsin
+
+[Serializable] => xml dönüşümü için serileştirilebilir demek
+
+
+xml çıktısında backfield gibi saçma çıktılar görürsen record tipinde ama get set olarak ayarla init i set ile değiştir
+
+FORMATTERS; 11.6 api  (anket ile ilgili verileri csv ile döndürebilirsin)
+	farklı türlerde çıktı vermek istersen textoutputformatter veya başka formatterları kalıtım alarak istediğini oluşturabilirsin
+	
+
+
+
+
+
+
+
+
+
+
+

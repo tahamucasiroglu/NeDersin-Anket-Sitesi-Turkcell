@@ -1,0 +1,3 @@
+[ResponseCache(Durationm=60)] => action üzerine eklenince direk olur
+usecors dan sonra caching çağır
+

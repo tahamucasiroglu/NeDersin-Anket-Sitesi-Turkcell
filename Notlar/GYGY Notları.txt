@@ -1,0 +1,72 @@
+
+ders 28 1.20 usewelcomepage i incele
+
+
+
+domain < domainservice - usecase < application service < ınfrastructer < application < observability service
+ders 29 1.58
+	repository her zamaman çözüm değildir
+	entityler gelecekte artacaksa repositoryler çözümdür.
+
+
+ders 29 2.01
+	domain var domain servis ne
+	eğer kurs var katılımcı var kurs entitysine katılımcı ekleme domain service
+	
+ders 2.02 
+	mail gibi işlemler application service de olur
+	
+
+kendi lifetime ini yani singleton filan yazmaya bak 
+
+ders 30 2.30 da 
+	sayfalama işlemi var
+	
+
+ders 34 30dk authorize anlatımı
+
+ders 34 1.55 claimsprincipal 
+
+ders 35 cache
+
+ders 36 3.20 de middleware ile nasıl direk dönüş yaparsın durumu anlatılmakta 
+
+
+ders 37 0.45  restapi
+ders 37 2.10 idempotent
+idempotent arka arkaya çalışmada aynı sonuç dönecek. httpput idempotent dır. 
+
+
+ders 38 2.10 da cors ekleme var policy ekle app ilede kullan de bu sayede http iletişimi aç
+
+ders 38 2.24 js kullanımı,
+headers a authorize ekleyerek iletişim sağlayabilirsin sonrası login işlemi 
+
+tokenda issuer ve audience olayı nedir bak 
+ders 39 0.55 de token anlatımı var
+ders 39 1.30 da bearer token anlatımı var
+ders 39 1.55 pcky flow - oauth2 
+
+ders 40 39. arayüz kötü derlerse için türkay hoca cevabı
+
+----------ödev ----------------
+
+1-) istediğiniz nuget paketini kullanabilirsiniz
+2-) arkadaki mimariye ve teknolojiye siz karar vereceksiniz
+3-) ana hatları ile anket ve anket pool uygulaması online olacak. Surwaymonkey gibi
+4-) sadece yüzde bilgisi verilecek / yüzde şu kadarı şunu işaretledi / (burada anonim ve üye gibide özellik eklenir)
+5-) minimum gereksinimler 
+	- soru girdi 
+	- sonra kullanıclarla paylaşmalık link oluşturacak
+	- linke girenlker ankete katılım gösterebilecek
+	- anonimler cevap verebilir
+	- tek satırlı kısa sorular - çok satırlı paragraf soruları 
+	- rating cevaplar - 
+	- ayni ipden cevap sınırlama güzel bir challenge olur
+	- yalnızca json editörünü kullanabilirsiniz arayüz olarak bu bile kabul
+	- ben yetiştiremedimsadece anket oluşturmayı yaptım derseniz ona göre değerlendirilirsiniz
+	- loglamada paylaşmayı göstterseniz yeter diyor ama imkan dahilinde konsol yerine log olarak şu kullanıcı logladı demeye çalış
+	- video çekeceksiniz anket kullanıcısı olarak gireceksiniz cevap vereceksiniz
+	- ayrıca kullanılan teknoloji ve yapılanları video ile açıkla
+	- 
+	

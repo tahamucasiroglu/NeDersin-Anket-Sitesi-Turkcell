@@ -1,0 +1,77 @@
+[ActionFilter] => controller yada içindeki action uygulanan yerlerde düzenleme imkanı sağlar
+
+ActionFilterAttribute sınıfını miras alarak kendi attribute mizi hazırlarız 14.3
+
+------------------------
+
+public class ValidationFilterAttribute : ActionFilterAttribute
+    {
+        public override void OnActionExecuting(ActionExecutingContext context)
+        {
+            var controller = context.RouteData.Values["controller"];
+            var action = context.RouteData.Values["action"];
+
+            // Dto
+            var param = context.ActionArguments
+                .SingleOrDefault(p => p.Value.ToString().Contains("Dto")).Value;
+
+            if(param is null)
+            {
+                context.Result = new BadRequestObjectResult($"Object is null. " +
+                    $"Controller : {controller} " +
+                    $"Action :  {action}" );
+                return; // 400
+            }
+
+            if (!context.ModelState.IsValid)
+                context.Result = new UnprocessableEntityObjectResult(context.ModelState); // 422 
+        }
+    }
+	
+var controller = context.RouteData.Values["controller"];
+var action = context.RouteData.Values["action"];
+bunlar controller hakkında bilgi verir isim veriyor tahminimce
+
+var param = context.ActionArguments.SingleOrDefault(p => p.Value.ToString().Contains("Dto")).Value;
+buda bunun kullanıldığı yerde adında dto geçen değeri alıyor zaten iletişim dto larla olduğundan bizim değeri alıyor ama sınıf mı değişkenmi bilemem
+
+if(param is null)
+{
+	context.Result = new BadRequestObjectResult($"Object is null. " +
+		$"Controller : {controller} " +
+		$"Action :  {action}" );
+	return; // 400
+}
+değer yoksa dönecek
+
+f (!context.ModelState.IsValid)
+                context.Result = new UnprocessableEntityObjectResult(context.ModelState); // 422 
+geçersiz istekse yine hata
+
+context.result ilede döndürüyoz
+
+bunu builder.service.addscope ile ekleme yaparız bu sayede her yerden kullanılır IOC kaydı
+
+bunuda [ServiceFilter(typeof(Tip))] method başına vererek kullanırız
+
+---------------------------------------
+
+loglama için attribute oluşturma 14.5
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	

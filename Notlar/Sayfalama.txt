@@ -1,0 +1,7 @@
+api 15. bölüm
+
+15.9 metadata tanımı var header ile sayfa bilgisi dönme bu önemli projede
+15.10 da statik bir sistem kuruyor bunu unutma
+15.13 testi var mantığı var orada
+15.14  izle sayfalamayı servise ekleme var ama ayrıntılı orada sen hepsi deme güvenlik için gereklileri tut
+

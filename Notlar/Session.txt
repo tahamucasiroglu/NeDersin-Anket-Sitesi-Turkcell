@@ -1,0 +1,31 @@
+----------------------MVC-----------------------------
+sessionları yönetmenin birden fazla yolu var => cookie - session state - temp data - query string - hidden fileds - httpcontext.ıtems - cache
+-----
+builder.Services.AddDistributedMemoryCache();
+builder.Services.AddSession();
+app.UseSession();
+bunları ekleyerek sessionları aktif hale getiririz
+------------
+
+HttpContext.Session ile sessionlara veri saklayabilirsin. byte[] - int - string dışında veri tutamazsın
+
+builder.services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>(); => 
+
+builder.services.addsession(options => cookie.name ile cookie özel isim ıdletimeout ile süresınırı koyaiblirsin) 13.3
+
+mvc 13.3 ve 13.4 ile extension ile session a extension la sınıf gömme
+
+13.5 de session için arayüz hazırlama var
+session sınıfına [JsonIgnore] arayüzde önemli
+
+
+----------------------APİ-----------------------------
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,33 @@
+----------------------APİ-----------------------------
+bir adresin üzerine gelip set as a new variable dersen onu değişken oalrak kaydeder adresleri bu sayade tek seferde güncelleyebilirisin
+
+
+tests kısmında testler hazırlanabilir
+
+
+pm.test("Status is 200", function(){
+	pm.response.to.have.status(201) => js ile solidity kullanımındaki test kısmına benziyor
+})
+
+
+test fonsiyonunda random veriler ile collectionda => run collectiondan istediğin kadar komutu çalıştırabilirsin döngü olarak
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

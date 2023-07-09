@@ -29,13 +29,106 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NeDersin.Utils", "src\Appli
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Çözüm Öğeleri", "Çözüm Öğeleri", "{D785D619-92AC-40DA-B491-01FB049BB1BB}"
 	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+		.gitattributes = .gitattributes
+		.gitignore = .gitignore
 		DevNots\Notlar.txt = DevNots\Notlar.txt
-		Github\README.md = Github\README.md
+		README.md = README.md
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{98C11C1C-6E9F-471F-919F-CA41AEABC33F}"
 	ProjectSection(SolutionItems) = preProject
 		.editorconfig = .editorconfig
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Notlar", "Notlar", "{55CBD917-28F4-4C1C-9B3D-77D84E239D03}"
+	ProjectSection(SolutionItems) = preProject
+		Notlar\Arama.txt = Notlar\Arama.txt
+		Notlar\Asenkron.txt = Notlar\Asenkron.txt
+		Notlar\Attributes.txt = Notlar\Attributes.txt
+		Notlar\AutoMapper.txt = Notlar\AutoMapper.txt
+		Notlar\Caching.txt = Notlar\Caching.txt
+		Notlar\Controller.txt = Notlar\Controller.txt
+		Notlar\Dosyaİşlemleri.txt = Notlar\Dosyaİşlemleri.txt
+		Notlar\Doğrulama - Validation.txt = Notlar\Doğrulama - Validation.txt
+		Notlar\EfCore.txt = Notlar\EfCore.txt
+		Notlar\Eylem Filtreleri.txt = Notlar\Eylem Filtreleri.txt
+		Notlar\Filtreleme.txt = Notlar\Filtreleme.txt
+		Notlar\Genel.txt = Notlar\Genel.txt
+		Notlar\GYGY Notları.txt = Notlar\GYGY Notları.txt
+		Notlar\Hata Yönetimi.txt = Notlar\Hata Yönetimi.txt
+		Notlar\Hateoas.txt = Notlar\Hateoas.txt
+		Notlar\Logger-NLog.txt = Notlar\Logger-NLog.txt
+		Notlar\Oturum İşlemleri.txt = Notlar\Oturum İşlemleri.txt
+		Notlar\Postman.txt = Notlar\Postman.txt
+		Notlar\Program_cs.txt = Notlar\Program_cs.txt
+		Notlar\Proje_Fikirleri.txt = Notlar\Proje_Fikirleri.txt
+		Notlar\Sayfalama.txt = Notlar\Sayfalama.txt
+		Notlar\Session.txt = Notlar\Session.txt
+		Notlar\TagHelpers.txt = Notlar\TagHelpers.txt
+		Notlar\VeritabanıTasarımı.txt = Notlar\VeritabanıTasarımı.txt
+		Notlar\İçerikPazarlığı.txt = Notlar\İçerikPazarlığı.txt
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Images", "Images", "{0CF89EFD-BDB3-4578-ACD4-297AAD573898}"
+	ProjectSection(SolutionItems) = preProject
+		Images\addsurveydto.png = Images\addsurveydto.png
+		Images\anket cevabı cevap .png = Images\anket cevabı cevap .png
+		Images\anket cevabı cevap.png = Images\anket cevabı cevap.png
+		Images\anket cevabı istek.png = Images\anket cevabı istek.png
+		Images\anket ekleme cevap 1.png = Images\anket ekleme cevap 1.png
+		Images\anket ekleme cevap 2.png = Images\anket ekleme cevap 2.png
+		Images\anket ekleme istek.png = Images\anket ekleme istek.png
+		Images\api_alt.png = Images\api_alt.png
+		Images\api_ust.png = Images\api_ust.png
+		Images\aplication orta.png = Images\aplication orta.png
+		Images\Application alt.png = Images\Application alt.png
+		Images\application kısa versioyn.png = Images\application kısa versioyn.png
+		Images\Application üst.png = Images\Application üst.png
+		Images\basepostcontroller.png = Images\basepostcontroller.png
+		Images\cevap ekleme cevap.png = Images\cevap ekleme cevap.png
+		Images\cevap ekleme istek.png = Images\cevap ekleme istek.png
+		Images\DB.png = Images\DB.png
+		Images\deletesurveydto.png = Images\deletesurveydto.png
+		Images\domain kısa versiyon.png = Images\domain kısa versiyon.png
+		Images\domain.png = Images\domain.png
+		Images\efrepositorybase.png = Images\efrepositorybase.png
+		Images\efsurveyrepository.png = Images\efsurveyrepository.png
+		Images\Entities.png = Images\Entities.png
+		Images\getsurveysto.png = Images\getsurveysto.png
+		Images\hata.png = Images\hata.png
+		Images\Hateoas .png = Images\Hateoas .png
+		Images\IBaseController.png = Images\IBaseController.png
+		Images\IBasecore.png = Images\IBasecore.png
+		Images\Infrasracture kısa versiyon.png = Images\Infrasracture kısa versiyon.png
+		Images\Infrasracture.png = Images\Infrasracture.png
+		Images\Irepository.png = Images\Irepository.png
+		Images\ISurvey service.png = Images\ISurvey service.png
+		Images\ISurveyService.png = Images\ISurveyService.png
+		Images\logfilterattribute.png = Images\logfilterattribute.png
+		Images\presentation.png = Images\presentation.png
+		Images\repositorybase.png = Images\repositorybase.png
+		Images\response ekleme cevap.png = Images\response ekleme cevap.png
+		Images\response ekleme istek.png = Images\response ekleme istek.png
+		Images\servicebase.png = Images\servicebase.png
+		Images\ServisConverToReturn.png = Images\ServisConverToReturn.png
+		Images\solve result.png = Images\solve result.png
+		Images\soru ekleme cevap.png = Images\soru ekleme cevap.png
+		Images\soru ekleme istek.png = Images\soru ekleme istek.png
+		Images\survey controller.png = Images\survey controller.png
+		Images\survey monkey .png = Images\survey monkey .png
+		Images\survey service.png = Images\survey service.png
+		Images\surveycontroller.png = Images\surveycontroller.png
+		Images\surveycontrollerasync.png = Images\surveycontrollerasync.png
+		Images\sırvey interface.png = Images\sırvey interface.png
+		Images\updatesurveydto.png = Images\updatesurveydto.png
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "MicrosoftWhiteBoard", "MicrosoftWhiteBoard", "{045F3D6A-C0A5-4C9F-88BB-F4462C81ACC2}"
+	ProjectSection(SolutionItems) = preProject
+		Images\MicrosoftWhiteBoard\NeDersin_Sunum.pdf = Images\MicrosoftWhiteBoard\NeDersin_Sunum.pdf
+		Images\MicrosoftWhiteBoard\NeDersin_Sunum.zip = Images\MicrosoftWhiteBoard\NeDersin_Sunum.zip
+		Images\MicrosoftWhiteBoard\NeDersin_Sunum.png = Images\MicrosoftWhiteBoard\NeDersin_Sunum.png
 	EndProjectSection
 EndProject
 Global
@@ -88,6 +181,7 @@ Global
 		{4984C120-AA3A-4E3A-A262-41C4A1B48545} = {B64E40BB-D51F-49CA-843D-D81381AB6ACA}
 		{D62F5C20-6F26-44BB-A268-F774F31B6726} = {677F1C1C-21BB-461D-8F44-FC46A36E41D3}
 		{AAE3152F-4581-4C96-A922-F702CA7354C4} = {0DE6E835-932B-4715-A3A3-D92A068878CE}
+		{045F3D6A-C0A5-4C9F-88BB-F4462C81ACC2} = {0CF89EFD-BDB3-4578-ACD4-297AAD573898}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {C70BA36A-34D9-4FA3-BA57-6D7BD37A241D}

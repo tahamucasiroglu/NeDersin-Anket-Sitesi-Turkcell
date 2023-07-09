@@ -1,0 +1,62 @@
+ddos mantığı anket ekleme saldırısınıu önlemek için çeşitli leveller ekle ve bu levellere yükleme sınırı ver mesela şirketse sınırsız gold kiş iise günde 5 anket gibi
+
+dependency enjection ve IoC kullan 4.8 ve 4.9 (mvc btk)
+
+mvc 9.3 11.45 de admin panele bak api için sunum amaçlı kullanılabilir mvc ile api haberleşmesi nasıl olur bilemem(angular - js - react - bir js den admin panel çek onu kullan arayüzden bu panel mvc için muhtemelen bak ama)
+
+veritabanında soru tablosu ekle eklenen sorular anketle beraber olsun. sorular sadece yazı değil resim ses video ile de desteklenebilir bu yüzden her duruma hazırlıklı olarak işlem yap ve eğer kolayca olacaksa dosyaları servera yükleme ekle
+
+dil desteği ekle
+
+https://surveyjs.io/survey-creator/documentation/integration-with-backend  => survey in bacjkendi
+https://vertabelo.com/blog/database-design-survey-system/ => surveyy db
+survey ve türevi siteler için örneklşere bak
+
+veritabanında IEntityTypeConfiguration ile özellikleri farklı bir yerde sakla kodları düzenle
+veritabanını doldur ama aşırı doldur milyonluk veri ile çalış
+
+miras alınmasın dediklerine sealed de 
+içerik pazaarlığı ekle json ve xml desteği ekle frontend ci için
+
+anket için süre ekle süresi dolmasınıda hangfire ile kontrol et
+
+üye olmayanlarda anket ile cevap verecek fakat biri sürekli cevap verebilir arka arkaya bunun için çözüm ara ip kaydet tarayıciya bir şeyler koy araştır
+
+categori için siyasi anket filan yanda veya üste göstermek için menü kategorisi getir
+
+işlevlerine bak ve projede kullanılabilir mi incele
+-PKCE Flow -> zorla
+-hangfire -> anket bitişleriiçin kontrol et
+-rabbitmq
+-redis
+-quartz 3
+-pacco
+
+
+anketlerde soru cevaplamada sayfalama olmayacak lakin anketleri listelerken yapılır
+
+
+yorum satırlı açıklamaları unutma
+
+REST API bak rest api yap
+
+------------------------onion------------------
+
+1-) domain
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

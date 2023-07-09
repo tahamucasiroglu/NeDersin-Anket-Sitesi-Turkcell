@@ -1,0 +1,19 @@
+----------------------MVC-----------------------------
+Dto ları record olarak alabilirsin tekte oluşturulacağı için recortd tipi kullan yeni teknoloji  https://www.gencayyildiz.com/blog/c-9-0-records-ile-immutable-datalar/   https://medium.com/software-development-turkey/c-9-10-derinlemesine-record-ve-record-struct-tipleri-78afb8a58db8#:~:text=C%23%209%20ile%20birlikte%20record,de%C4%9Ferleriyle%20%C3%B6n%20plana%20%C3%A7%C4%B1kmas%C4%B1n%C4%B1%20sa%C4%9Flamakt%C4%B1r.
+
+----------------------APİ-----------------------------
+
+builder.services.addautomapper(typeof(Program)) => normalde createmaplerin olduğu yeri söyleriz bu direk programı veriyor bunu araştır
+
+dto ları record tipte tanımlamayı dene => performans için   => örnek olarak dto  punlic record bookdto(int id, string title, decimal price); şeklinde kısa tanımlarda yapabilirsin normal tanımda ise get set değil get init oalrak tanımlaman gerekir
+
+
+
+
+
+
+
+
+
+
+

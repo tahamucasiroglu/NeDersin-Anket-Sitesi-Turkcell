@@ -34,8 +34,7 @@ filtre (+) istenilen methodlarda gelen istekler loglanýyor
 middleware (kelime kontrolü)
 authorize (+)
 istatiksel api döünüþü (-+ idareten)
-istatiksel arayüz (frontend in amý.........)
-
+istatiksel arayüz
 
 
 

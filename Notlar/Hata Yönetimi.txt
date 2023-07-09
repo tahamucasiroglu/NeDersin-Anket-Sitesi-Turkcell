@@ -1,0 +1,28 @@
+----------------------APİ-----------------------------
+
+error için sınıf oluşturdu entities e ama
+
+app.useexceptionhandler(error=> apperror.run(async context => context.Response.StatusCode = (int)HttpStatusCode.ınternalserverError, context.response.contenttype = "application/json");)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

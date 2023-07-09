@@ -1,0 +1,7 @@
+----------------------APİ-----------------------------
+return NotFound ile bulunamadı 404 döndürebilirsin
+
+fonsiyonda hem httpget("{id:int}") diyerek hemde fonksiyonda [FromRoute(name="id)] int id diyerek sabitlemeli temiz kodlu bir çalışma yapılabilir
+
+[HttpPatch] => koyarak patch fonsiyonu olduğunu belirtirsin sonra fonsiyona [FromRoute] int id ve [frombody] jsonpatchdocument<tip> tip ilede veriyi alrsın (resim video ses için olabilir) parçalı işlem olarrak kullanılıyormuş
+

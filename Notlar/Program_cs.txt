@@ -1,0 +1,32 @@
+----------------------MVC-----------------------------
+builder.Services.AddControllerWithViews();  => bu controller eklerken controllerların view ınıda ekler bu sayede controllera eklenen viewlar özel olarak belirtilmez (mvc varso zorunlu koyulma)
+
+app.MapControllerRoute => controllor tipi eklemeyi sağlar
+
+app.UseRouting => rouiting işlemlerin eklenmesini sağlar bu sayede app.MapControllerRoute kullanılabilir
+
+app.UseStaticFiles => wwwroot klasörünü kurması için => burası sadece kütüphaneler için değil aynı zamanda içine html dosyaları ile statik sayfalar gömmek içinde kullanılabilir
+
+app.UseEndpoints => mvc 9.2 de => areas içindeki yerleri tanıtmak için kullanılır
+
+
+
+----------------------APİ-----------------------------
+
+app.MapControllers(); => attribute olarak eklenen route yapısının aktif olmasını sağlar
+
+builder.logging.clearproviders(); IOC ye kayıt yapmadan kullanmayı sağlar
+builder.logging.addconsole(); => konsol ekleme
+builder.logging.adddebug() => debug a ekleme
+
+patch için jsonpatch ve newtons kurman lazım => builder.services.addcontrollers().addnewtonsoftjson(); ile aktifolur
+
+burada ekleyeceğin her şey iextension ile ekle
+
+
+
+
+
+
+
+

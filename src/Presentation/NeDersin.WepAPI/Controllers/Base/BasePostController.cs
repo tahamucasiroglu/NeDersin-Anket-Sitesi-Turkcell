@@ -26,8 +26,9 @@ namespace NeDersin.WepAPI.Controllers.Base
     {
         public BasePostController(IService<TGet, TAdd, TUpdate, TDelete> service, HateoasModel hateoasModel, ILogger<ControllerBase> logger) : base(service, hateoasModel, logger) { }
 
-        [AdminAuthorize]
+        
         [HttpPost]
+        [Authorize]
         public virtual IActionResult Add([FromBody] TAdd survey)
         {
             if (!ModelState.IsValid) 
@@ -42,8 +43,9 @@ namespace NeDersin.WepAPI.Controllers.Base
 
             return StaticHelperMethods.SolveResult<TGet, TAdd>(result, hateoasModel);
         }
-        [AdminAuthorize]
+        
         [HttpDelete]
+        [Authorize]
         public virtual IActionResult Delete([FromBody] TDelete survey)
         {
             if (!ModelState.IsValid) 
@@ -59,8 +61,8 @@ namespace NeDersin.WepAPI.Controllers.Base
 
             return StaticHelperMethods.SolveResult<TGet, TDelete>(result, hateoasModel);
         }
-        [AdminAuthorize]
         [HttpPut]
+        [Authorize]
         public virtual IActionResult Update([FromBody] TUpdate survey)
         {
             if (!ModelState.IsValid) 

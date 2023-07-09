@@ -1,0 +1,11 @@
+----------------------MVC-----------------------------
+formda resim yüklemeyi mvc de 11.2 de anlayıtyor apide nasıl olur bilemem
+
+input da name="file" type="file"  olacak  ayrıca forma enctype="multipart/form-data" ekle
+
+----------------------APİ-----------------------------
+
+
+
+
+

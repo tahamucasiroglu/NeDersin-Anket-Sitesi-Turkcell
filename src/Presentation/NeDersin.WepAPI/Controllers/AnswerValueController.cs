@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using NeDersin.DTOs.Concrete.Request.Add;
 using NeDersin.DTOs.Concrete.Request.Delete;
@@ -29,7 +30,7 @@ namespace NeDersin.WepAPI.Controllers
 
         [HttpGet("[action]")]
         [ServiceFilter(typeof(LogFilterAttribute))]
-        [AnketorAuthorize]
+        [Authorize]
         public IActionResult GetById([FromBody] IdModel Id)
         {
             if (!ModelState.IsValid) return ModelStateNonValid<IdModel>(nameof(GetById));
@@ -41,7 +42,7 @@ namespace NeDersin.WepAPI.Controllers
 
         [HttpGet("[action]")]
         [ServiceFilter(typeof(LogFilterAttribute))]
-        [AnketorAuthorize]
+        [Authorize]
         public IActionResult GetByName([FromBody] StringValueModel Name)
         {
             if (!ModelState.IsValid) return ModelStateNonValid<StringValueModel>(nameof(GetByName));

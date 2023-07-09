@@ -1,0 +1,84 @@
+----------------------MVC-----------------------------
+ModelState.IsValid işlemler başarılı ise devam et için if ile kullanılabilir
+ModelState.AddModelError ile hata ekleyerek modelstate.isvalid için engeli ekleyebilrisin uzun kodlarda son kontrol için arada hata eklemelerle daha temiz kod yazılır
+modelstate 3.9 da anlatılıyor eğer kaçırdığım yer yoksa oto basıyor ama muhtemelen mvc de bir şeyle bastı (proje için mvc gereksiz kendin için bakarsın)
+ViewComponent =>view içinde kullanılacak fonksiyonları burada tanımlayarak çağırdığıun yer viewcomponentcontext ile kullanırsın : ViewComponent mras alarak kullanırsın
+mvc 10.2 de parçalı efcore tasarımı var zpide yap uygula
+model view view model => mvvm => 12. bölüm mvc
+----------------------APİ-----------------------------
+
+controller eklerken otomatik mvc seçili onu api yapmayı unutma
+
+appsettings.json da log level içine "microsoft.aspnetcore":"warning" dersen sadece uyarıları gösterir kalanları gizler    microsoft":"warning" ile tüm microsoft patketlerini kapsar
+
+appsettinsleri bbirden çok farklı hazırlayarak istenilen durumlara gire lunchsettingsten profil oluşturabilirsin   3.5
+
+_logger.LogWarning gibi şeylerle özel loglar atılabilir
+
+
+miras alınmasın dediklerine sealed de 
+
+
+propfull ile get set ayarlı prop açabilirsin
+
+0authzero pcke flow kullanıyor
+
+efcore da queryfilter ne bak
+
+return Redirect("/"); ile ıactionresult larda anasayaya dönebilirsin
+
+-----------------onion architecture -----------------
+
+
+iç katman 1. katman -> domain = merkez katman => entities - value object - enumeration - excepotion
+
+2. katman -> repository & services & interfaces = domain ile iş katmanı arasındaki soyutlama katmanıdır => tüm servis arayüzleri burada tanımlanır. katman amacı loosely couple yapmaktır. CQRS burada olmaktadır
+
+3. katman -> 
+	presistence katmanı 
+		veritabanı işlemleri gerçekleşir
+		repository interfacelerinin concreteleri burada olur
+	Insfrastructure katmanı
+		veritabanındaki veri erişimi dışındaki tüm servisler burada olur
+		sms/mail/bildirim kservisleri burada olur
+	presentation 
+		webui - webservice
+		
+
+
+
+--------------------cache-------------------
+
+program cs ye builder services addmemorycache ekle sonra kontrollerda IMemorycache ile kullanılabilir
+
+
+------------------proje mimarisi------------------
+
+Entities
+	db entitiyleri 
+	sabitler 
+	enumeration 
+	domain exceptionları
+
+persistence 
+	dbcontext
+	migration
+	configurations
+	seeding
+	ınterface Implementation
+
+ınfrastructure 
+	presistence ile beraber genel olarak kullanılır
+	email - sms
+	bildirim
+	ödeme gibi işler olur
+presentation katmanı
+	console app
+	web app
+	web api
+	mvc
+
+
+
+
+

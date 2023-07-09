@@ -20,10 +20,10 @@ namespace NeDersin.WepAPI.Enumeration.HateoasEnumeration
         }
     public List<LinkModel> SurveyControllerGetLinksHateoas { get; } = new List<LinkModel>() 
         {
-            new LinkModel("/", "Get", "Json"),
-            new LinkModel("/", "Post", "Json"),
-            new LinkModel("/", "Put", "Json"),
-            new LinkModel("/", "Delete", "Json")
+            new LinkModel("/Survey", "Get", "Json"),
+            new LinkModel("/Survey", "Post", "Json"),
+            new LinkModel("/Survey", "Put", "Json"),
+            new LinkModel("/Survey", "Delete", "Json")
         };
 
         public Dictionary<string, Dictionary<string, string>> SurveyControllerGetMethodsHateoas

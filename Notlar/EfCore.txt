@@ -1,0 +1,40 @@
+----------------------APİ-----------------------------
+
+dönüşleri Iqueryable yap  => asenkronlar için IEnurable yap
+
+configleri onmodelcreating içinde applyconfigile bağlaman lazım
+
+lazy_loading => ihtiyaç halinde üretme private readonly Lazy<IProductservice> gibi 7.8 de buna özel bak 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
