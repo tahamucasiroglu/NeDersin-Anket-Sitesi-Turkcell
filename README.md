@@ -1,18 +1,18 @@
 # NeDersin
 
-Hangfire sonradan eklendi. Hızlıca öğrenemek için yapıldı. Tam değil. 
+Hangfire sonradan eklendi. HÄ±zlÄ±ca Ã¶ÄŸrenemek iÃ§in yapÄ±ldÄ±. Tam deÄŸil. 
 
 
 
-[Proje Videosu bulunamadı](https://youtu.be/bTI9D1FN0fI "Proje Videosu")
+[Proje Videosu](https://youtu.be/bTI9D1FN0fI "Proje Videosu")
 
 
-Proje Sunum Görseli (Microsoft Whiteboard)
+Proje Sunum GÃ¶rseli (Microsoft Whiteboard)
 
 
-![resim bulunamadı. Images/MicrosoftWhiteBoard  a bakın](Images/MicrosoftWhiteBoard/NeDersin_Sunum.png)
+![resim bulunamadÄ±. Images/MicrosoftWhiteBoard  a bakÄ±n](Images/MicrosoftWhiteBoard/NeDersin_Sunum.png)
 
-En ufak kısımlarıda okumak için Images/MicrosoftWhiteBoard/NeDersin_Sunum.pdf dosyasına gidiniz.
+En ufak kÄ±sÄ±mlarÄ±da okumak iÃ§in Images/MicrosoftWhiteBoard/NeDersin_Sunum.pdf dosyasÄ±na gidiniz.
 
 
 
